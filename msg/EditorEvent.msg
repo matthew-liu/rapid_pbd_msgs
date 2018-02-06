@@ -35,3 +35,6 @@ rapid_pbd_msgs/Program program
 int32 step_num # 0-indexed step number
 rapid_pbd_msgs/Action action
 int32 action_num # 0-indexed action number
+
+# If type is DETECT_SURFACE_OBJECTS, an array of DetectionParam is also needed.
+DetectionParam[] param_list

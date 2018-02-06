@@ -56,6 +56,7 @@ add_message_files(
   Action.msg
   ArmControllerState.msg
   ControlStrategy.msg
+  DetectionParam.msg
   EditorEvent.msg
   Landmark.msg
   Program.msg
