@@ -2,8 +2,9 @@ Action[] actions # A list of actions to run concurrently.
 
 string scene_id # An ID that can be used to look up a point cloud of the scene at this step.
 
-# Each step contains an array of ROS parameters for the environment where the step should be run.
-DetectionParam[] param_list
+# Each step contains a set of array of ROS parameters for the environment where the step
+# should be run.
+DetectionParams params
 
 # All of the landmarks found once this step executes.
 #
