@@ -18,6 +18,9 @@ string DETECT_SURFACE_OBJECTS = detect surface objects
 string GET_JOINT_VALUES = get joint values
 string GET_POSE = get pose
 
+# Changing ROS parameters for surface perception
+string UPDATE_SURFACE_PERCEPTION_PARAMETERS = update surface perception parameters
+
 string type
 
 # If type is UPDATE, all fields of program_info and program are needed.
@@ -36,3 +39,5 @@ int32 step_num # 0-indexed step number
 rapid_pbd_msgs/Action action
 int32 action_num # 0-indexed action number
 
+# If type is UPDATE_SURFACE_PERCEPTION_PARAMETERS, params is required to update the step
+DetectionParams params
