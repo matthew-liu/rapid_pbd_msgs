@@ -78,6 +78,7 @@ add_action_files(
   FILES
   ExecuteProgram.action
   SegmentSurfaces.action
+  FindLandmark2D.action
 )
 
 ## Generate added messages and services with any dependencies listed here

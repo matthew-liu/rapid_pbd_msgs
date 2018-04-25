@@ -5,6 +5,8 @@ string TF_FRAME = tf frame
 string SURFACE_BOX = surface box
 # A custom landmark
 string CUSTOM_LANDMARK = custom landmark
+# A 2d custom landmark
+string CUSTOM_LANDMARK_2D = custom landmark 2d
 # An AR tag or tag bundle
 string AR_TAG = AR tag
 string type
@@ -18,6 +20,8 @@ geometry_msgs/PoseStamped pose_stamped
 # If type == TF_FRAME, name is the frame ID
 # If type == SURFACE_BOX, name is an arbitrary name like "Object 1"
 # If type == CUSTOM_LANDMARK, name is the name of the custom landmark
+# If type == CUSTOM_LANDMARK_2D, name is the name of the 2d custom landmark
 string name
+geometry_msgs/Vector3 object_dims # Dimensions of a 2d custom landmark
 geometry_msgs/Vector3 surface_box_dims # Dimensions of a tabletop box
 uint32 ar_tag_id # The AR tag ID or master tag ID

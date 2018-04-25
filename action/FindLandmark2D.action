@@ -1,0 +1,6 @@
+string object_name # Name of the object to be found
+bool save_cloud # True if the point cloud should be saved
+---
+rapid_pbd_msgs/Landmark[] landmarks
+string cloud_db_id # MongoDB id of the cloud, if saved
+---
