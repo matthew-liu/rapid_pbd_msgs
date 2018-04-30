@@ -1,4 +1,5 @@
 string object_name # Name of the object to be found
+float64 match_limit # the threshold for ALL matching objects, default value is 0.68
 bool save_cloud # True if the point cloud should be saved
 ---
 rapid_pbd_msgs/Landmark[] landmarks
