@@ -15,6 +15,7 @@ string VIEW_STEP = view step
 
 # Robot actions to execute
 string DETECT_SURFACE_OBJECTS = detect surface objects
+string DETECT_LANDMARK_2D = detect custom 2d landmarks
 string GET_JOINT_VALUES = get joint values
 string GET_POSE = get pose
 
@@ -28,6 +29,7 @@ string type
 # If type is DELETE_ACTION, program_info.db_id, step_num, and action_num are needed.
 # If type is VIEW, then program_info.db_id and step_num are needed.
 # If type is DETECT_SURFACE_OBJECTS, program_info.db_id, step_num, and action_num are needed.
+# If type is DETECT_LANDMARK_2D, program_info.db_id, step_num, action_num, and ... are needed.
 # If type is GET_JOINT_VALUES, program_info.db_id, step_num, action_num, and action.actuator_group are needed.
 # If type is GET_POSE, program_info.db_id, step_num, action_num, action.actuator_group, and action.landmark are needed.
 rapid_pbd_msgs/ProgramInfo program_info

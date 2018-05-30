@@ -12,6 +12,8 @@ string MOVE_TO_CARTESIAN_GOAL = move to cartesian goal
 string DETECT_TABLETOP_OBJECTS = detect tabletop objects
 # Find a custom landmark
 string FIND_CUSTOM_LANDMARK = find custom landmark
+# Find a 2D custom landmark
+string FIND_CUSTOM_LANDMARK_2D = find custom landmark 2D
 
 string type
 
@@ -29,7 +31,7 @@ string actuator_group
 
 # Acutation specifications
 ## If type == ACTUATE_GRIPPER
-control_msgs/GripperCommand gripper_command 
+control_msgs/GripperCommand gripper_command
 
 ## If type == MOVE_TO_JOINT_GOAL
 ## Used to move the head, torso, arm, or a custom set of joints
@@ -47,3 +49,7 @@ ControlStrategy control_strategy
 # Perception specifications
 ## If type == FIND_CUSTOM_LANDMARK
 string custom_landmark_name
+
+## If type == FIND_CUSTOM_LANDMARK_2D
+string custom_landmark_2d_name
+float64 match_limit 
